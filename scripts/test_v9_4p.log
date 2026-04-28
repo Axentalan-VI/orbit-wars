@@ -1,0 +1,23 @@
+﻿Loading environment open_spiel_env failed: No module named 'pokerkit'
+Loading environment werewolf failed: No module named 'litellm'
+  seat=0 game=1/3 rewards=[-1, -1, -1, 1] pts=[2, 1, 0, 3] target_pts=2 (12s)
+  seat=0 game=2/3 rewards=[1, -1, -1, -1] pts=[3, 2, 1, 0] target_pts=3 (11s)
+  seat=0 game=3/3 rewards=[-1, -1, -1, 1] pts=[2, 1, 0, 3] target_pts=2 (15s)
+  seat=1 game=1/3 rewards=[-1, -1, 1, -1] pts=[2, 1, 3, 0] target_pts=1 (72s)
+  seat=1 game=2/3 rewards=[-1, 1, -1, -1] pts=[2, 3, 1, 0] target_pts=3 (20s)
+  seat=1 game=3/3 rewards=[1, -1, -1, -1] pts=[3, 2, 1, 0] target_pts=2 (9s)
+  seat=2 game=1/3 rewards=[-1, -1, -1, 1] pts=[2, 1, 0, 3] target_pts=0 (10s)
+  seat=2 game=2/3 rewards=[1, -1, -1, -1] pts=[3, 2, 1, 0] target_pts=1 (39s)
+  seat=2 game=3/3 rewards=[-1, -1, 1, -1] pts=[2, 1, 3, 0] target_pts=3 (5s)
+  seat=3 game=1/3 rewards=[-1, -1, 1, -1] pts=[2, 1, 3, 0] target_pts=0 (4s)
+  seat=3 game=2/3 rewards=[-1, -1, 1, -1] pts=[2, 1, 3, 0] target_pts=0 (30s)
+  seat=3 game=3/3 rewards=[1, -1, -1, -1] pts=[3, 2, 1, 0] target_pts=0 (16s)
+
+===== RESULTS (12 games) =====
+v9 avg placement pts: 1.417  (samples=12)
+v7 avg placement pts: 1.528  (samples=36)
+delta: -0.111
+  v9 at seat 0: [2, 3, 2] avg=2.33
+  v9 at seat 1: [1, 3, 2] avg=2.00
+  v9 at seat 2: [0, 1, 3] avg=1.33
+  v9 at seat 3: [0, 0, 0] avg=0.00

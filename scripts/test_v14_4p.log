@@ -1,0 +1,31 @@
+﻿Loading environment open_spiel_env failed: No module named 'pokerkit'
+Loading environment werewolf failed: No module named 'litellm'
+  seat=0 game=1/5 rewards=[-1, 1, -1, -1] pts=[2, 3, 1, 0] target_pts=2 (7s)
+  seat=0 game=2/5 rewards=[-1, -1, 1, -1] pts=[2, 1, 3, 0] target_pts=2 (9s)
+  seat=0 game=3/5 rewards=[-1, -1, -1, 1] pts=[2, 1, 0, 3] target_pts=2 (19s)
+  seat=0 game=4/5 rewards=[-1, -1, 1, -1] pts=[2, 1, 3, 0] target_pts=2 (10s)
+  seat=0 game=5/5 rewards=[-1, 1, -1, -1] pts=[2, 3, 1, 0] target_pts=2 (6s)
+  seat=1 game=1/5 rewards=[-1, 1, -1, -1] pts=[2, 3, 1, 0] target_pts=3 (30s)
+  seat=1 game=2/5 rewards=[-1, -1, 1, -1] pts=[2, 1, 3, 0] target_pts=1 (9s)
+  seat=1 game=3/5 rewards=[-1, 1, -1, -1] pts=[2, 3, 1, 0] target_pts=3 (6s)
+  seat=1 game=4/5 rewards=[-1, -1, 1, -1] pts=[2, 1, 3, 0] target_pts=1 (22s)
+  seat=1 game=5/5 rewards=[-1, 1, -1, -1] pts=[2, 3, 1, 0] target_pts=3 (5s)
+  seat=2 game=1/5 rewards=[1, -1, -1, -1] pts=[3, 2, 1, 0] target_pts=1 (18s)
+  seat=2 game=2/5 rewards=[-1, 1, -1, -1] pts=[2, 3, 1, 0] target_pts=1 (20s)
+  seat=2 game=3/5 rewards=[1, -1, -1, -1] pts=[3, 2, 1, 0] target_pts=1 (13s)
+  seat=2 game=4/5 rewards=[-1, 1, -1, -1] pts=[2, 3, 1, 0] target_pts=1 (11s)
+  seat=2 game=5/5 rewards=[1, -1, -1, -1] pts=[3, 2, 1, 0] target_pts=1 (9s)
+  seat=3 game=1/5 rewards=[-1, 1, -1, -1] pts=[2, 3, 1, 0] target_pts=0 (12s)
+  seat=3 game=2/5 rewards=[-1, -1, -1, 1] pts=[2, 1, 0, 3] target_pts=3 (15s)
+  seat=3 game=3/5 rewards=[1, -1, -1, -1] pts=[3, 2, 1, 0] target_pts=0 (12s)
+  seat=3 game=4/5 rewards=[-1, 1, -1, -1] pts=[2, 3, 1, 0] target_pts=0 (31s)
+  seat=3 game=5/5 rewards=[1, -1, -1, -1] pts=[3, 2, 1, 0] target_pts=0 (8s)
+
+===== RESULTS (20 games) =====
+v14 avg placement pts: 1.450  (samples=20)
+v7 avg placement pts: 1.517  (samples=60)
+delta: -0.067
+  v14 at seat 0: [2, 2, 2, 2, 2] avg=2.00
+  v14 at seat 1: [3, 1, 3, 1, 3] avg=2.20
+  v14 at seat 2: [1, 1, 1, 1, 1] avg=1.00
+  v14 at seat 3: [0, 3, 0, 0, 0] avg=0.60

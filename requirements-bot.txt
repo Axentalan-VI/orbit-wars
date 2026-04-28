@@ -1,0 +1,3 @@
+# Runtime deps the submitted bot relies on (kept minimal).
+# kaggle-environments is preinstalled in the competition container.
+numpy>=1.26,<3.0

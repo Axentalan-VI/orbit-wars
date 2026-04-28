@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Artifacts
+data/
+submissions/*.tar.gz
+submissions/*.zip
+*.pt
+*.ckpt
+
+# Editor
+.vscode/*.log

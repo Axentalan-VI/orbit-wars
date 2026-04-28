@@ -1,0 +1,4 @@
+kaggle-environments>=1.16.0
+numpy>=1.26,<3.0
+torch>=2.2
+pytest>=8.0

@@ -1,0 +1,95 @@
+{
+  "best_win_rate": 1.0,
+  "best_vec": {
+    "comet_mul": 1.0252682219589881,
+    "neutral_mul": 1.0298967964725632,
+    "aggression_mul": 1.326674920931721,
+    "safety_margin": 1.327880980202939,
+    "weakest_opp_mul": 1.0586029056264685,
+    "other_opp_mul": 0.9004004226901258,
+    "compact_pen": 0.023705164792546245
+  },
+  "best_profile": {
+    "comet_mul": 1.0252682219589881,
+    "neutral_mul": 1.0298967964725632,
+    "aggression_mul": 1.326674920931721,
+    "safety_margin": 1,
+    "weakest_opp_mul": 1.0586029056264685,
+    "other_opp_mul": 0.9004004226901258,
+    "compact_pen": 0.023705164792546245
+  },
+  "final_mean": {
+    "comet_mul": 1.156317055489747,
+    "neutral_mul": 1.0050937806919604,
+    "aggression_mul": 1.3510421008040212,
+    "safety_margin": 1.3298273839768342,
+    "weakest_opp_mul": 1.0622141271500412,
+    "other_opp_mul": 0.8842065215959956,
+    "compact_pen": 0.024219789083467627
+  },
+  "final_std": {
+    "comet_mul": 0.22106569990382796,
+    "neutral_mul": 0.045,
+    "aggression_mul": 0.06,
+    "safety_margin": 0.23459949513848724,
+    "weakest_opp_mul": 0.05952046675690101,
+    "other_opp_mul": 0.024,
+    "compact_pen": 0.006
+  },
+  "history": [
+    {
+      "gen": 1,
+      "mean": {
+        "comet_mul": 1.3126341109794941,
+        "neutral_mul": 1.0149483982362817,
+        "aggression_mul": 1.3133374604658605,
+        "safety_margin": 1.1639404901014694,
+        "weakest_opp_mul": 1.1043014528132342,
+        "other_opp_mul": 0.9002002113450629,
+        "compact_pen": 0.024352582396273123
+      },
+      "std": {
+        "comet_mul": 0.40639673761620126,
+        "neutral_mul": 0.045,
+        "aggression_mul": 0.06,
+        "safety_margin": 0.2318468645235903,
+        "weakest_opp_mul": 0.0646275052122709,
+        "other_opp_mul": 0.024,
+        "compact_pen": 0.006
+      },
+      "best_wr": 1.0
+    },
+    {
+      "gen": 2,
+      "mean": {
+        "comet_mul": 1.156317055489747,
+        "neutral_mul": 1.0050937806919604,
+        "aggression_mul": 1.3510421008040212,
+        "safety_margin": 1.3298273839768342,
+        "weakest_opp_mul": 1.0622141271500412,
+        "other_opp_mul": 0.8842065215959956,
+        "compact_pen": 0.024219789083467627
+      },
+      "std": {
+        "comet_mul": 0.22106569990382796,
+        "neutral_mul": 0.045,
+        "aggression_mul": 0.06,
+        "safety_margin": 0.23459949513848724,
+        "weakest_opp_mul": 0.05952046675690101,
+        "other_opp_mul": 0.024,
+        "compact_pen": 0.006
+      },
+      "best_wr": 1.0
+    }
+  ],
+  "total_seconds": 36.35896420478821,
+  "config": {
+    "pop": 6,
+    "elite": 2,
+    "gens": 2,
+    "games_per": 2,
+    "workers": 4,
+    "seed": 1,
+    "out": "E:\\Kaggle\\Orbit Wars\\scripts\\tune_result.json"
+  }
+}

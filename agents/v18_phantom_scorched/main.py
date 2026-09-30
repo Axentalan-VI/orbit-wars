@@ -521,4 +521,51 @@ def agent(obs, config=None):
                 surplus[sid] -= send
                 remaining -= send
 
+    # ----- 9. Scorched Earth Evacuation -----
+    safe_allies = [p for p in my if int(p[0]) not in doomed]
+    for sid in list(doomed):
+        if surplus.get(sid, 0) >= 2:
+            src_p = next((p for p in my if int(p[0]) == sid), None)
+            if not src_p or not safe_allies:
+                continue
+            sx, sy = float(src_p[2]), float(src_p[3])
+            best_ally = min(safe_allies, key=lambda a: math.hypot(sx - float(a[2]), sy - float(a[3])))
+            ally_id = int(best_ally[0])
+
+            def _ally_pos(off, ally_id=ally_id):
+                return _pred_target_pos(ally_id, ini, comet_tracks, av, step + off)
+
+            eta_e, ex, ey = _arr_eta(sx, sy, surplus[sid], _ally_pos, step)
+            if eta_e is None:
+                continue
+            ang, rx, ry = _best_angle(sx, sy, ex, ey)
+            if ang is not None:
+                actions.append([sid, float(ang), int(surplus[sid])])
+                surplus[sid] = 0
+
+    # ----- 10. Phantom Fleets (post-opener, 1 per turn cap) -----
+    if not early and opp_power:
+        strongest_opp = max(opp_power, key=opp_power.get)
+        leader_planets = [p for p in P if int(p[1]) == strongest_opp]
+        if leader_planets:
+            best_leader_planet = max(leader_planets, key=lambda p: int(p[6]))
+            tid = int(best_leader_planet[0])
+            tx, ty = _pred_target_pos(tid, ini, comet_tracks, av, step + 50) or (float(best_leader_planet[2]), float(best_leader_planet[3]))
+            # Pick the single best donor (highest surplus among low-prod safe planets)
+            donors = [
+                src for src in my
+                if int(src[0]) not in doomed
+                and surplus[int(src[0])] >= 3
+                and int(src[6]) <= 4
+            ]
+            if donors:
+                donors.sort(key=lambda s: surplus[int(s[0])], reverse=True)
+                src = donors[0]
+                sid = int(src[0])
+                sx, sy = float(src[2]), float(src[3])
+                ang, ax, ay = _best_angle(sx, sy, tx, ty)
+                if ang is not None:
+                    actions.append([sid, float(ang), 2])
+                    surplus[sid] -= 2
+
     return actions

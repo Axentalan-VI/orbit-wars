@@ -5,6 +5,13 @@ Kaggle competition: https://www.kaggle.com/competitions/orbit-wars
 This repo contains a sequence of bot versions for Orbit Wars.  
 The goal is to improve score step by step while keeping logic stable and fast.
 
+## Result
+
+**636.1 final ship count**, the best of 20 scored submissions across the seven
+bot versions below. The competition is still running. Each version's own
+behaviour and what changed between them is documented further down — the
+version history is the point of this repo.
+
 ## Game in 20 seconds
 
 - Map: continuous 100x100 board.

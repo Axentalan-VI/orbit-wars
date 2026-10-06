@@ -15,5 +15,6 @@ submissions/*.zip
 # Editor
 .vscode/*.log
 
-# Local Claude Code settings
-.claude/settings.local.json
+# Local editor settings
+.vscode/
+.idea/

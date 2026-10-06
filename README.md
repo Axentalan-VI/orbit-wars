@@ -8,7 +8,8 @@ The goal is to improve score step by step while keeping logic stable and fast.
 ## Result
 
 **636.1 final ship count**, the best of 20 scored submissions across the seven
-bot versions below. The competition is still running. Each version's own
+bot versions below. The competition closed on 2026-07-07, with a final standing
+of 3232 of 4729 teams. Each version's own
 behaviour and what changed between them is documented further down — the
 version history is the point of this repo.
 

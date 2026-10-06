@@ -140,6 +140,26 @@ Design philosophy:
 Current goal:
 - Keep or beat v3 leaderboard score with incremental, testable changes.
 
+## Later versions (v7 onward)
+
+The write-ups above stop at v6, but the repo carries eleven more agents. Their
+names say what each one tried; the per-version reasoning is not written up yet.
+
+| Version | Idea in the name |
+| --- | --- |
+| `v7_prediction` | predict the opponent's next move, not just its policy |
+| `v8_targeting` | choose which opponent planet to hit, rather than the nearest |
+| `v9_control` | hold territory instead of trading ships |
+| `v10_rank` | rank candidate moves by expected value |
+| `v11_patience` | wait for growth before committing a fleet |
+| `v12_evacuation` | abandon a planet that cannot be held |
+| `v13_evac_tight` | the same, with a stricter give-up threshold |
+| `v14_payback` | prioritise retaking what was just lost |
+| `v16_hoard` | accumulate ships rather than spend them continuously |
+| `v18_phantom_scorched` | feint plus denial: leave nothing worth capturing |
+
+Numbering has gaps (no v15, v17) where a version was tried and dropped.
+
 ## What changed most from version to version
 
 - v0 -> v1: from random actions to value-based targeting.
